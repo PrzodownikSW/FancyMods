@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="SW_24hTraders" />
+	<DisplayName value="SW_24hTraders" />
+	<Description value="A mod that adds 24-hour trading functionality." />
+	<Author value="PrzodownikSW" />
+	<Website value="" />
+	<Version value="1.0" />
+	<SkipWithAntiCheat value="false" />
+</xml>
