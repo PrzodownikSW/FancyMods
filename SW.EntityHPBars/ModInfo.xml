@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-	<Name value="SW_OldSpikes" />
-	<DisplayName value="SW_OldSpikes" />
-	<Description value="A mod that brings back the old log spikes." />
+	<Name value="SW_EntityHPBars" />
+	<DisplayName value="SW_EntityHPBars" />
+	<Description value="A mod that adds HP bars above entities." />
 	<Author value="PrzodownikSW" />
 	<Website value="" />
 	<Version value="1.0" />
