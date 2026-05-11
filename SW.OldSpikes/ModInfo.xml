@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="SW_OldSpikes" />
+	<DisplayName value="SW_OldSpikes" />
+	<Description value="Old log spikes are back!" />
+	<Author value="PrzodownikSW" />
+	<Website value="" />
+	<Version value="1.0" />
+	<SkipWithAntiCheat value="false" />
+</xml>

@@ -1,0 +1,18 @@
+Key,File,English,Polish
+SW_LogSpike1,Item,"Wooden Log Spike","Drewniany Kolec"
+SW_LogSpike1Desc,Item,"Sharpened log. Cheap early-game defense.","Zaostrzony bal. Tania obrona na początku gry."
+
+SW_LogSpike2,Item,"Reinforced Wood Log Spike","Wzmocniony Drewniany Kolec"
+SW_LogSpike2Desc,Item,"Reinforced wooden spike. Lasts longer.","Wzmocniony drewniany kolec. Trwa dłużej."
+
+SW_LogSpike3,Item,"Reinforced Metal Wood Log Spike","Drewniano-Metalowy Kolec"
+SW_LogSpike3Desc,Item,"Wooden core with metal bracing.","Drewniany rdzeń z metalowym okuciem."
+
+SW_LogSpike4,Item,"Scrap Iron Spike","Kolec ze Złomu"
+SW_LogSpike4Desc,Item,"Heavy scrap-iron spike for mid-game.","Ciężki kolec ze złomu na środkową fazę gry."
+
+SW_LogSpike5,Item,"Reinforced Scrap Iron Spike","Wzmocniony Kolec ze Złomu"
+SW_LogSpike5Desc,Item,"Reinforced scrap iron. Takes horde pressure.","Wzmocniony złom. Wytrzymuje napór hordy."
+
+SW_LogSpike6,Item,"Steel Spike","Stalowy Kolec"
+SW_LogSpike6Desc,Item,"High-grade steel. Max damage and durability.","Solidna stal. Maksymalne obrażenia i trwałość."

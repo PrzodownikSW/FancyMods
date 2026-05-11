@@ -1,0 +1,17 @@
+<config>
+	<append xpath="/recipes">
+
+		<recipe name="SW_LogSpike1" count="1" craft_time="2">
+			<ingredient name="resourceWood" count="20"/>
+		</recipe>
+
+		<recipe name="SW_LogSpike4" count="1" craft_time="18">
+			<ingredient name="resourceScrapIron" count="60"/>
+		</recipe>
+
+		<recipe name="SW_LogSpike6" count="1" craft_area="workbench" craft_time="25">
+			<ingredient name="resourceForgedSteel" count="10"/>
+		</recipe>
+
+	</append>
+</config>

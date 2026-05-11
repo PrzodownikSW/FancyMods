@@ -1,0 +1,151 @@
+<config>
+	<append xpath="/blocks">
+
+		<!-- BASIC WOOD SPIKE -->
+		<block name="SW_LogSpike1">
+			<property name="Class" value="TrunkTip"/>
+			<property name="BlockTag" value="Spike"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="logSpike1"/>
+			<property name="Damage" value="3"/>
+			<property name="Damage_received" value="7"/>
+			<property name="Material" value="Mwood_regular"/>
+			<property name="Shape" value="New"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="@:Shapes/cone1m.fbx"/>
+			<property name="Texture" value="21,21,22,22,22,22"/>
+			<property name="UseGlobalUV" value="Local"/>
+			<property name="LightOpacity" value="6"/>
+			<property name="ImposterExchange" value="imposterPyramid" param1="10"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="FuelValue" value="300"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10"/>
+			</property>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="SW_LogSpike2"/>
+				<property name="Item" value="resourceWood"/>
+				<property name="ItemCount" value="10"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="UpgradeSound" value="place_block_wood"/>
+			<drop event="Destroy" name="resourceWood" count="2,6"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="EconomicValue" value="30"/>
+			<property name="EconomicBundleSize" value="20"/>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="FilterTags" value="fdecor,ftraps"/>
+			<property name="SortOrder1" value="70g0"/>
+		</block>
+
+		<!-- REINFORCED WOOD -->
+		<block name="SW_LogSpike2">
+			<property name="Extends" value="SW_LogSpike1"/>
+			<property name="CustomIcon" value="logSpike2"/>
+			<property name="Damage" value="4"/>
+			<property name="Texture" value="379"/>
+			<property name="ImposterExchange" value="imposterPyramid" param1="119"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="SW_LogSpike3"/>
+				<property name="Item" value="resourceScrapIron"/>
+				<property name="ItemCount" value="20"/>
+			</property>
+			<property name="UpgradeSound" value="place_block_metal"/>
+			<property name="DowngradeBlock" value="SW_LogSpike1"/>
+			<property name="EconomicValue" value="0"/>
+		</block>
+
+		<!-- WOOD AND METAL -->
+		<block name="SW_LogSpike3">
+			<property name="Extends" value="SW_LogSpike2" param1="RepairItems"/>
+			<property name="CustomIcon" value="logSpike3"/>
+			<property name="Damage" value="5"/>
+			<property name="Damage_received" value="10"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Texture" value="380"/>
+			<property name="ImposterExchange" value="imposterPyramid" param1="120"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="20"/>
+			</property>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="SW_LogSpike4"/>
+				<property name="ItemCount" value="40"/>
+			</property>
+			<property name="DowngradeBlock" value="SW_LogSpike2"/>
+			<drop event="Destroy" name="resourceWood" count="0"/>
+			<drop event="Destroy" name="resourceScrapIron" count="8"/>
+		</block>
+
+		<!-- SCRAP IRON -->
+		<block name="SW_LogSpike4">
+			<property name="Extends" value="SW_LogSpike2" param1="DowngradeBlock,RepairItems"/>
+			<property name="CustomIcon" value="logSpike4"/>
+			<property name="DisplayType" value="blockHardened"/>
+			<property name="Damage" value="6"/>
+			<property name="Damage_received" value="9"/>
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Texture" value="307"/>
+			<property name="ImposterExchange" value="imposterPyramid" param1="87"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="40"/>
+			</property>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="SW_LogSpike5"/>
+				<property name="ItemCount" value="40"/>
+			</property>
+			<drop event="Destroy" name="resourceWood" count="0"/>
+			<drop event="Destroy" name="resourceScrapIron" count="15"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		</block>
+
+		<!-- REINFORCED SCRAP IRON -->
+		<block name="SW_LogSpike5">
+			<property name="Extends" value="SW_LogSpike4"/>
+			<property name="CustomIcon" value="logSpike5"/>
+			<property name="Damage" value="7"/>
+			<property name="Damage_received" value="10"/>
+			<property name="Texture" value="352"/>
+			<property name="ImposterExchange" value="imposterPyramid" param1="110"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="SW_LogSpike6"/>
+				<property name="Item" value="resourceForgedSteel"/>
+				<property name="ItemCount" value="10"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="DowngradeBlock" value="SW_LogSpike4"/>
+		</block>
+
+		<!-- STEEL -->
+		<block name="SW_LogSpike6">
+			<property name="Class" value="TrunkTip"/>
+			<property name="BlockTag" value="Spike"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="logSpike6"/>
+			<property name="DisplayType" value="blockHardened"/>
+			<property name="Damage" value="7"/>
+			<property name="Damage_received" value="40"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Shape" value="New"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="@:Shapes/cone1m.fbx"/>
+			<property name="Texture" value="356,355,356,356,356,356"/>
+			<property name="UseGlobalUV" value="Local"/>
+			<property name="LightOpacity" value="6"/>
+			<property name="ImposterExchange" value="imposterPyramid" param1="112"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property class="RepairItems">
+				<property name="resourceForgedSteel" value="10"/>
+			</property>
+			<property name="UpgradeSound" value="place_block_metal"/>
+			<property name="DowngradeBlock" value="SW_LogSpike5"/>
+			<drop event="Destroy" name="resourceScrapIron" count="10,20"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="FilterTags" value="fdecor,ftraps"/>
+			<property name="SortOrder1" value="70g0"/>
+		</block>
+
+	</append>
+</config>
