@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configs>
+
+    <!-- Pack Mule Updates -->
+    <set xpath="/progression/perks/perk[@name='perkPackMule']/effect_group/passive_effect[@name='CarryCapacity']/@value">5,10,17,23,30</set>
+
+    <!-- Firemans Almanac Complete Updates -->
+    <set xpath="progression/perks/book[@name='perkFiremansAlmanacComplete']/effect_group/passive_effect[@name='CarryCapacity']/@value">75</set>
+
+    <!-- Night Stalker Thief Adrenaline Updates -->
+    <set xpath="progression/perks/book[@name='perkNightStalkerThiefAdrenaline']/effect_group/passive_effect[@name='CarryCapacity']/@value">75</set>
+
+</configs>

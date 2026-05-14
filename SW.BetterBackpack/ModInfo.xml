@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <Name value="SW_BetterBackpack" />
+    <DisplayName value="SW_BetterBackpack" />
+    <Description value="Improved Backpack for 7 Days to Die" />
+    <Author value="PrzodownikSW" />
+    <Website value="" />
+    <Version value="1.0" />
+    <SkipWithAntiCheat value="false" />
+</xml>

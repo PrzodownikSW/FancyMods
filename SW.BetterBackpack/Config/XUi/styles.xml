@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configs>
+
+    <append xpath="/styles/global">
+        <style_entry name="golden" value="255,191,0"/>
+    </append>
+
+</configs>

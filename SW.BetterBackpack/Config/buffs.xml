@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configs>
+    
+    <!-- Fix for god mode to match carry capacity -->
+    <set xpath="/buffs/buff[@name='god']/effect_group/passive_effect[@name='CarryCapacity']/@value">75</set>
+
+    <!-- Fix for steroids to match carry capacity -->
+    <set xpath="/buffs/buff[@name='buffDrugSteroids']/effect_group/passive_effect[@name='CarryCapacity']/@value">75</set>
+
+</configs>

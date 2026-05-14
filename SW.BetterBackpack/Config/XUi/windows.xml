@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configs>
+    <set xpath="/windows/window[@name='windowLooting']/rect[@name='content']/grid[@name='queue']/@rows">20</set>
+    <set xpath="/windows/window[@name='windowLooting']/rect[@name='content']/grid[@name='queue']/@cols">20</set>
+
+    <setattribute xpath="/windows/window[@name='windowBackpack']/panel[@name='header']" name="width">1008</setattribute>
+    <setattribute xpath="/windows/window[@name='windowBackpack']/panel[@name='header']" name="pos">0,4</setattribute>
+
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/rect[@controller='ContainerStandardControls']/button[@name='btnClearInventory']/@pos">250, -22</set>
+    <set xpath="/windows/window[@name='windowBackpack']/@width">1012</set>
+    <set xpath="/windows/window[@name='windowBackpack']/@height">349</set>
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/rect[@controller='ContainerStandardControls']/@pos">682,0</set>
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/rect/rect/button[@name='btnMoveFillAndSmart']/@sprite">ui_game_symbol_store_similar_up</set>
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/rect/rect/button[@name='btnMoveAll']/@sprite">ui_game_symbol_store_all_up</set>
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/label[2]/@pos">876,-8</set>
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/sprite[@name='costIcon']/@pos">967,-10</set>
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/sprite[@name='costIcon']/@color">[golden]</set>
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/@height">303</set>
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/@pos">0,-46</set>
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@rows">5</set>
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@cols">15</set>
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@width">1006</set>
+    <set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@height">336</set>
+
+    <set xpath="/windows/window[@name='windowToolbelt']/@pos">-350, 84</set>
+    <set xpath="/windows/window[@name='windowToolbelt']/rect/rect[@controller='Toolbelt']/button[@name='btnClearInventory1']/@pos">1250,-32</set>
+</configs>
