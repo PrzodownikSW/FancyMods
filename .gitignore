@@ -1,2 +1,5 @@
 0_TFP_Harmony
 Internals
+.vs
+*.csproj.user
+obj

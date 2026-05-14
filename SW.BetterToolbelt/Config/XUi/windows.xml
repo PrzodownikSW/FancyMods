@@ -1,0 +1,10 @@
+﻿<config>
+
+	<set xpath="/windows/window[@name='windowToolbelt']/rect/rect[@controller='Toolbelt']/grid/@cols">12</set>
+
+	<set xpath="/windows/window[@name='windowToolbelt']/@width">903</set>
+	<set xpath="/windows/window[@name='windowToolbelt']/@pos">-451, 92</set>
+
+	<set xpath="/windows/window[@name='windowToolbelt']/rect/sprite[@fill='{xp}']/@width">900</set>
+
+</config>
